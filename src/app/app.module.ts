@@ -1,4 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, 
+  // CUSTOM_ELEMENTS_SCHEMA 
+} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
@@ -13,6 +15,11 @@ import { GoogleMaps } from '@ionic-native/google-maps';
 import { IonicStorageModule } from '@ionic/storage';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+<<<<<<< HEAD
+=======
+
+import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
+>>>>>>> 22b3f75ebcce88589fbd86faa5ddbf0cc76a3cbb
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,8 +35,10 @@ import { environment } from '../environments/environment';
     StatusBar,
     SplashScreen,
     GoogleMaps,
+    YoutubeVideoPlayer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  // schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {}

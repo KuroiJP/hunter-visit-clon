@@ -30,10 +30,12 @@ npm-debug.log*
 /plugins
 /www
 
-# My own lines
+# Hunter visit Project's own specific lines
 readme-installation.txt
 hunter-visit.keystore
 /images-to-discard
 *.report.html
 /.firebase
-/src/environments/*
+.firebaserc
+/docs
+# /src/environments/*
